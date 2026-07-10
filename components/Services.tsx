@@ -25,7 +25,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="bg-zinc-950 py-24 text-white">
+    <section
+  id="services"
+  className="bg-zinc-950 py-24 text-white"
+>
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="text-center">

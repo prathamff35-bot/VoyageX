@@ -9,8 +9,14 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-     <Hero />
-      <section className="bg-gray-100 py-20">
+
+<section id="home">
+  <Hero />
+</section>
+      <section
+  id="destinations"
+  className="bg-gray-100 py-20"
+>
   <div className="mx-auto max-w-7xl px-6">
     <h2 className="mb-12 text-center text-5xl font-bold">
       Featured Destinations
@@ -45,9 +51,15 @@ export default function HomePage() {
 
 
 
-<Services />
-<Testimonials />
-<Contact />
+<section id="services">
+  <Services />
+</section>
+<section id="testimonials">
+  <Testimonials />
+</section>
+<section id="contact">
+  <Contact />
+</section>
 <Footer />
 
     </>

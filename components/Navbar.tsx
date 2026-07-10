@@ -7,13 +7,13 @@ import { Menu, X } from 'lucide-react';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'Destinations', href: '/destinations' },
-    { label: 'Tours', href: '/tours' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' },
-  ];
+ const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "Destinations", href: "#destinations" },
+  { label: "Services", href: "#services" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "Contact", href: "#contact" },
+];
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full transition-all duration-300">
