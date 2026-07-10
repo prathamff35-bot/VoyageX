@@ -43,9 +43,16 @@ export default function Navbar() {
 
             {/* Desktop CTA */}
             <div className="hidden md:block">
-              <Button className="bg-amber-500 text-black hover:bg-amber-400 hover:shadow-lg hover:shadow-amber-500/25">
-                Book Now
-              </Button>
+              <Button
+  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+  className="bg-amber-500 text-black hover:bg-amber-400 hover:shadow-lg hover:shadow-amber-500/25"
+>
+  Book Now
+</Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -76,9 +83,17 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="px-3 pt-4">
-                <Button className="w-full bg-amber-500 text-black hover:bg-amber-400">
-                  Book Now
-                </Button>
+                <Button
+  onClick={() => {
+    setIsOpen(false);
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+  className="w-full bg-amber-500 text-black hover:bg-amber-400"
+>
+  Book Now
+</Button>
               </div>
             </div>
           </div>
