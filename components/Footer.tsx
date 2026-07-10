@@ -3,9 +3,6 @@ import {
   MapPin,
   Mail,
   Phone,
-  Instagram,
-  Facebook,
-  Twitter,
   Globe,
   Heart
 } from 'lucide-react';
@@ -92,15 +89,11 @@ export default function Footer() {
               </h3>
               <div className="flex flex-wrap gap-3">
                 {[
-                  { icon: Instagram, label: 'Instagram', color: 'hover:text-pink-400' },
-                  { icon: Facebook, label: 'Facebook', color: 'hover:text-blue-500' },
-                  {
-  icon: Facebook,
-  label: "Facebook 2",
-  color: "hover:text-blue-400",
-},
-                  { icon: Globe, label: 'Website', color: 'hover:text-blue-600' },
-                ].map((social) => {
+  { icon: Globe, label: 'Website', color: 'hover:text-blue-600' },
+  { icon: Globe, label: 'Travel', color: 'hover:text-green-500' },
+  { icon: Globe, label: 'Explore', color: 'hover:text-purple-500' },
+  { icon: Globe, label: 'Discover', color: 'hover:text-amber-400' },
+].map((social) => {
                   const Icon = social.icon;
                   return (
                     <a
