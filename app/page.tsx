@@ -1,6 +1,7 @@
 import Services from "@/components/Services";
 import Hero from "@/components/Hero";
 import Navbar from '@/components/Navbar';
+import Contact from "@/components/Contact";
 import Testimonials from "@/components/Testimonials";
 import DestinationCard from '@/components/DestinationCard';
 export default function HomePage() {
@@ -45,7 +46,7 @@ export default function HomePage() {
 
 <Services />
 <Testimonials />
-
+<Contact />
 
     </>
   );
