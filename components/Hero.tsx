@@ -1,5 +1,6 @@
  'use client';
  
+ import { motion } from "framer-motion";
  import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -29,7 +30,11 @@ export default function Hero() {
             </div>
             
             {/* Heading */}
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+            className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Explore
               <br />
               <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
@@ -37,25 +42,33 @@ export default function Hero() {
               </span>
               <br />
               In Style
-            </h1>
+            </motion.h1>
             
             {/* Subtitle */}
-            <p className="max-w-xl text-base text-white/80 sm:text-lg md:text-xl">
+            <motion.p
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 0.8 }} className="max-w-xl text-base text-white/80 sm:text-lg md:text-xl">
               Discover unforgettable destinations with premium travel experiences 
               designed for modern explorers.
-            </p>
+            </motion.p>
             
             {/* Buttons */}
-            <div className="flex flex-wrap items-center gap-4">
-              <Button
-  size="lg"
-  onClick={() => {
-    document.getElementById("services")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  }}
-  className="bg-amber-500 text-black hover:bg-amber-400 hover:shadow-xl hover:shadow-amber-500/30 transition-all duration-300 hover:scale-105"
+           <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.4, duration: 0.8 }}
+  className="flex flex-wrap items-center gap-4"
 >
+  <Button
+    size="lg"
+    onClick={() => {
+      document.getElementById("services")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+    className="bg-amber-500 text-black hover:bg-amber-400 hover:shadow-xl hover:shadow-amber-500/30 transition-all duration-300 hover:scale-105"
+  >
   Start Your Journey
 </Button>
   <Button
@@ -69,7 +82,7 @@ export default function Hero() {
 >
   View Tours
 </Button>
-            </div>
+            </motion.div>
             
             {/* Statistics */}
             <div className="grid grid-cols-2 gap-6 pt-8 sm:grid-cols-4">
