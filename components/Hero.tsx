@@ -50,7 +50,7 @@ export default function Hero() {
               <Button
   size="lg"
   onClick={() => {
-    document.getElementById("destinations")?.scrollIntoView({
+    document.getElementById("services")?.scrollIntoView({
       behavior: "smooth",
     });
   }}
