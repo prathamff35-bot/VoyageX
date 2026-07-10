@@ -5,9 +5,9 @@ import {
   Phone,
   Instagram,
   Facebook,
-  Linkedin,
-  Heart,
-} from "lucide-react";
+  LinkedinIcon,
+  Heart
+} from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -99,7 +99,7 @@ export default function Footer() {
   label: "Facebook 2",
   color: "hover:text-blue-400",
 },
-                  { icon: Linkedin, label: 'LinkedIn', color: 'hover:text-blue-600' },
+                  { icon: LinkedinIcon, label: 'LinkedIn', color: 'hover:text-blue-600' },
                 ].map((social) => {
                   const Icon = social.icon;
                   return (
