@@ -1,3 +1,5 @@
+ 'use client';
+ 
  import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -47,16 +49,26 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-4">
               <Button
   size="lg"
+  onClick={() => {
+    document.getElementById("destinations")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
   className="bg-amber-500 text-black hover:bg-amber-400 hover:shadow-xl hover:shadow-amber-500/30 transition-all duration-300 hover:scale-105"
 >
-                Start Your Journey
-              </Button>
+  Start Your Journey
+</Button>
   <Button
   size="lg"
+  onClick={() => {
+    document.getElementById("destinations")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
   className="border border-white bg-transparent text-white hover:bg-white/10"
 >
-                View Tours
-              </Button>
+  View Tours
+</Button>
             </div>
             
             {/* Statistics */}
