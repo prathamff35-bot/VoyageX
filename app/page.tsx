@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Navbar from '@/components/Navbar';
 import Contact from "@/components/Contact";
 import Testimonials from "@/components/Testimonials";
+import Footer from "@/components/Footer";
 import DestinationCard from '@/components/DestinationCard';
 export default function HomePage() {
   return (
@@ -47,6 +48,7 @@ export default function HomePage() {
 <Services />
 <Testimonials />
 <Contact />
+<Footer />
 
     </>
   );
